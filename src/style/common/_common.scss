@@ -124,9 +124,15 @@ main{
 .w100 {
   width: 100%;
 }
+.d-visible{
+  display:none;
+}
 @media all and (max-width: 767px) {
   .h-xs {
     display: none;
+  }
+  .d-visible{
+    display:grid;
   }
   body {
     font-size: 1.2rem;

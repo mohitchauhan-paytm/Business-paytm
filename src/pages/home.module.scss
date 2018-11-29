@@ -1,0 +1,107 @@
+@import '../style/common/variables';
+
+/* banner section styling */
+.banner-wrapper{
+	background-image: linear-gradient(to top, #00b1ff, #0051be 53%, #00319c 67%, #00091d);
+}
+.extra-padding{
+padding-bottom:185px;
+}
+.banner-inner{
+ color:#fff;
+ padding:42px 0;
+}
+.banner-txt{
+	text-align: center;
+	h3{
+		margin-top:16px;
+	}
+	button{
+		margin:32px 0;
+	}
+}
+.banner-pic{
+	
+}
+.banner-heading1{
+	font-size:2.2rem;
+	line-height: 2.4rem;
+	font-weight:bold;
+}
+.banner-heading2{
+	font-size:1.4rem;
+	line-height: 2.0rem;
+	font-weight: normal;
+}
+.dots{
+	position: relative;
+	margin-bottom:32px;
+}
+.payment-wrap{
+margin-top:-185px;
+}
+.payment-box{
+	padding:20px;
+	width:100%;
+	min-height:256px;
+	background:$white;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.03);
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.03);
+	margin-bottom:16px;
+	border:1px solid $line;
+	p{
+		color:$dark4;
+	}
+}
+.payment-heading{
+	margin-top:12px;
+	margin-bottom:8px;
+	color:$headcolor;
+	font-weight: 800;
+}
+.payment-btn-wrap{
+	margin-top:24px;
+	button{
+		&:first-child{
+			margin-right:12px;
+		}
+	}
+}
+
+@media (min-width:768px){
+	.section-wrap{
+		max-width:1110px;
+		margin:0 auto;
+	}
+	.banner-txt{
+		width:50%;
+		display:inline-block;
+		text-align:left;
+		h2{
+			margin-top:100px;
+			
+		}
+	}
+	.banner-pic{
+		width:50%;
+		display:inline-block;
+	}
+	.banner-heading1{
+		font-size:3.6rem;
+		line-height: 4.2rem;
+		font-weight:bold;
+	}
+	.bannerImg1{
+		margin-top:16px;
+	}
+	.payment-box{
+		width:33.33%;
+		max-width:350px;
+		background: $white;
+		padding:40px;
+	}
+	
+}

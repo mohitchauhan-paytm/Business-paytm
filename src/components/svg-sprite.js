@@ -1,9 +1,17 @@
 import React from 'react';
 import androidIcon from './../../static/assets/ic-business-web-android.svg';
+import iosIcon from './../../static/assets/ic-business-web-ios.svg';
+
 
 export const  AndroidIcon = (props) => (
     <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
     <use xlinkHref={`#${androidIcon.id}`} />
+  </svg>
+);
+
+export const  IosIcon = (props) => (
+    <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
+    <use xlinkHref={`#${iosIcon.id}`} />
   </svg>
 );
 
