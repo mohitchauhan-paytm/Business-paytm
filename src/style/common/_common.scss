@@ -125,7 +125,7 @@ main{
   width: 100%;
 }
 .d-visible{
-  display:none;
+  display:none!important;
 }
 @media all and (max-width: 767px) {
   .h-xs {

@@ -29,9 +29,14 @@ h2 {
 h3 {
     font-size: 1.6rem;
     line-height: 3.2rem;
+    font-weight: 800;
 }
 
-h4,
+h4{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+}
 h5,
 h6 {
     font-size: 1.4rem;
@@ -39,6 +44,20 @@ h6 {
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 1;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: $dark4;
+}
+
+@media(min-width:768px){
+    h3 {
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+        font-weight: 800;
+    }
+    h4 {
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+    }
 }

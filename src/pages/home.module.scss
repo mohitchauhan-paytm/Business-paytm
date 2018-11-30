@@ -1,5 +1,18 @@
 @import '../style/common/variables';
-
+/* globally used */
+.global-heading{
+	text-align:center;
+	padding-bottom:36px;
+	background:url('/assets/dots.svg') no-repeat center bottom;
+	margin:40px 0 15px 0;
+	padding:0  40px 36px 40px;
+ h2{
+	 font-size:2.4rem;
+	 font-weight:800;
+	 line-height: 2.8rem;
+	 
+ }
+}
 /* banner section styling */
 .banner-wrapper{
 	background-image: linear-gradient(to top, #00b1ff, #0051be 53%, #00319c 67%, #00091d);
@@ -20,8 +33,12 @@ padding-bottom:185px;
 		margin:32px 0;
 	}
 }
-.banner-pic{
-	
+.banner-btn{
+	margin-bottom:32px;
+	img{
+		display:block;
+		margin:0 auto;
+	}
 }
 .banner-heading1{
 	font-size:2.2rem;
@@ -35,8 +52,8 @@ padding-bottom:185px;
 }
 .dots{
 	position: relative;
-	margin-bottom:32px;
 }
+// payment section style
 .payment-wrap{
 margin-top:-185px;
 }
@@ -70,6 +87,35 @@ margin-top:-185px;
 		}
 	}
 }
+// Choose Paytm for your Business
+.business-step-box{
+padding:24px 0 0 0;
+
+}
+.blue-box{
+ width:42px;
+ height:42px;
+ -webkit-border-radius:50%;
+ -moz-border-radius:50%;
+ border-radius:50%;
+ background:#00b9f5  linear-gradient(161deg, #01b9f5, #368cf5);
+ float:left;
+ position: relative;
+ top:30px;
+}
+.step-box-detail{
+	width:calc(100% - 60px);
+	display:inline-block;
+	border-top: 1px solid $line;
+	padding:24px 0 0 0px;
+	margin-left:16px;
+	p{
+		margin:8px 0 12px 0;
+	}
+}
+
+
+
 
 @media (min-width:768px){
 	.section-wrap{
@@ -96,12 +142,93 @@ margin-top:-185px;
 	}
 	.bannerImg1{
 		margin-top:16px;
+		position: relative;
+		right:-30px;
 	}
 	.payment-box{
-		width:33.33%;
-		max-width:350px;
+		
 		background: $white;
 		padding:40px;
 	}
-	
+	.business-steps{
+		.row{
+			margin:0;
+		}
+	}
+	.business-row{
+		margin-left:0;
+		margin-right:0;
+	}
+	.business-row-box{
+		border-top:1px solid $line;
+		border-right:1px solid $line;
+		&:nth-child(3n){
+			border-right:none;
+		}
+		&:nth-child(1),&:nth-child(2),&:nth-child(3){
+			border-top:none;
+		}
+		
+		
+	}
+
+	.business-step-box{
+		min-height:255px;
+		padding:40px 15px 15px 45px;
+		
+	}
+	.step-box-detail{
+		border-top:none;
+		padding:0 0 24px 0px;
+	}
+	.blue-box{
+		float:none;
+		top:0;
+	}
+	.step-box-detail{
+		margin-left:0;
+		p{
+		margin-top:16px;
+		margin-bottom:24px;
+		}
+		width:100%;
+		h4{
+			margin-top:24px;
+		}
+		a{
+			color:$primary;
+			border:1px solid $line;
+			font-size: 1.4rem;
+			padding: 0px 15px;
+			min-height: 40px;
+			border-radius: 2px;
+			line-height: 40px;
+			display:inline-block;
+			font-weight: 600;
+    		cursor: pointer;
+		}
+	}
+	/* global for desktop*/
+	.global-heading{
+		margin:150px 0 140px 0;
+		padding-bottom:0;
+		background: url('/assets/dots.svg') no-repeat center left -100px;
+		position: relative;
+		&::after{
+			content: "";
+			background: url('/assets/dots.svg') no-repeat center right -100px;
+			width:200px;
+			height:36px;
+			position: absolute;
+			right:0;
+			top:10px;
+		}
+	 h2{
+		 font-size:4.2rem;
+		 line-height:4.2rem;
+		 font-weight:800;
+		 
+		 
+	 }
+	}
 }
