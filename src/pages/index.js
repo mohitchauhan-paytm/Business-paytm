@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-// import {AndroidIcon} from './../components/svg-sprite';
+import {Webicon} from './../components/svg-sprite';
+import {Qrcode} from './../components/svg-sprite';
+import {Paymentlink} from './../components/svg-sprite';
+import {Foodwallet} from './../components/svg-sprite';
+import {Paytmcash} from './../components/svg-sprite';
+import {Paytmgold} from './../components/svg-sprite';
 import * as style from './home.module.scss';
 
 class IndexPage extends Component { 
@@ -36,7 +41,7 @@ class IndexPage extends Component {
               <div className={`row`}>
                 <div className={`col-xs-12 col-md-4`}>
                   <div className={`${style.paymentBox}`}>
-                    <img src="/assets/qr-code-icon.svg" alt="qr-code-icon"/>
+                    <Webicon/>
                     <h3 className={`${style.paymentHeading}`}>Payment Gateway</h3>
                     <p>Add payments to your mobile app or website with Paytm SDKs and APIs</p>
                     <div className={`${style.paymentBtnWrap}`}>
@@ -47,7 +52,7 @@ class IndexPage extends Component {
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
                   <div className={`${style.paymentBox}`}>
-                    <img src="/assets/qr-code-icon.svg" alt="qr-code-icon"/>
+                    <Qrcode/>
                     <h3 className={`${style.paymentHeading}`}>QR Code</h3>
                     <p>Accept mobile payments via UPI, Cards and Wallet from customers in your store</p>
                     <div className={`${style.paymentBtnWrap}`}>
@@ -58,7 +63,7 @@ class IndexPage extends Component {
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
                   <div className={`${style.paymentBox}`}>
-                    <img src="/assets/qr-code-icon.svg" alt="qr-code-icon"/>
+                    <Paymentlink/>
                     <h3 className={`${style.paymentHeading}`}>Payment Links</h3>
                     <p>Request payments from your customers over SMS, Chat or Email</p>
                     <div className={`${style.paymentBtnWrap}`}>
@@ -144,6 +149,132 @@ payments received, bank settlements and more</p>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Happy to help</h4>
                       <p>24*7 email support, speak to us from 8AM to 8PM. We are here for you</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* -----------Paytm Client Slider ----------- */}
+          <div className={`${style.clientWrap}`}>
+            <div className={`${style.globalshadow}`}></div>
+            <h3 className={`${style.clientHeading}`}>Join the millions of businesses using Paytm</h3>
+            <div className={`container`}>
+              <div className={`row`}>
+                <div className={`col-xs-12 col-md-12`}>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/myntra.png" alt="myntra-logo"/></div>
+                    <p>Myntra</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/swiggy.png" alt="swiggy-logo"/></div>
+                    <p>Swiggy</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/oyo.png" alt="Oyo Rooms"/></div>
+                    <p>Oyo Rooms</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/uber.png" alt="uber-logo"/></div>
+                    <p>Uber</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/dominos.png" alt="dominos-logo"/></div>
+                    <p>Dominos</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/foodpanda.png" alt="foodpanda-logo"/></div>
+                    <p>Foodpanda</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={`${style.globalshadow}`}></div>
+          </div>
+
+          {/* ----------- Corporate Solutions for Your Business ----------- */}
+          <div className="C-solutionWrap">
+            <div className={`${style.globalHeading}`}>
+              <h2>Corporate Solutions for Your Business</h2>
+            </div>
+            <div className={`container`}>
+              <div className={`row`}>
+                <div className={`col-xs-12 col-md-4`}>
+                  <div className={`${style.paymentBox} ${style.cSolution}`}>
+                    <Foodwallet/>
+                    <h3 className={`${style.paymentHeading}`}>Food Wallet</h3>
+                    <p>Provide tax free meal allowance to your employees with paytm food wallet</p>
+                  </div>
+                  <div className={`${style.btnStrip}`}>
+                      <a href="#">Learn more ></a>
+                  </div>
+                </div>
+                <div className={`col-xs-12 col-md-4`}>
+                  <div className={`${style.paymentBox} ${style.cSolution}`}>
+                    <Paytmcash/>
+                    <h3 className={`${style.paymentHeading}`}>Paytm Cash</h3>
+                    <p>Disburse cash digitally to your employees from an easy to use dashboard with Paytm Cash</p>
+                  </div>
+                  <div className={`${style.btnStrip}`}>
+                      <a href="#">Learn more ></a>
+                  </div>
+                </div>
+                <div className={`col-xs-12 col-md-4`}>
+                  <div className={`${style.paymentBox} ${style.cSolution}`}>
+                    <Paytmgold/>
+                    <h3 className={`${style.paymentHeading}`}>Paytm Gold</h3>
+                    <p>Fast, convenient &#38; transparent way for you to gift 24K Gold digitally to your employees, partners or customers</p>
+                  </div>
+                  <div className={`${style.btnStrip}`}>
+                      <a href="#">Learn more ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ----------- See what our partners have to say ----------- */}
+          <div className="testimonialWrap">
+            <div className={`${style.globalHeading}`}>
+              
+            </div>
+            <div className={`container`}>
+              <div className={`row`}>
+                <div className={`col-xs-12 col-md-4`}>
+                  <div className={`${style.testimonialBox}`}>
+                    <h6 className={`${style.testHeading}`}>Truly designed and built for developers</h6>
+                    <p>Integrating Paytm was a breeze, we have spent about 30 mins doing it! Unquestionably the only Indian payment gateway truly built for developers.</p>
+                    <div className={`${style.testImgBox} grid justify-between`}>
+                      <div>
+                        <p className={`${style.bold}`}>Chandan Mathew</p>
+                        <p>Head of Technology, Book My Show</p>
+                      </div>
+                      <img src="assets/client1.jpg" alt="client-img"/>
+                    </div>
+                  </div>
+                </div>
+                <div className={`col-xs-12 col-md-4`}>
+                  <div className={`${style.testimonialBox}`}>
+                    <h6 className={`${style.testHeading}`}>Promising technological innovation</h6>
+                    <p>Paytm is a promising technological innovation which solves a teething problem of processing payments. </p>
+                    <div className={`${style.testImgBox} grid justify-between`}>
+                      <div>
+                        <p className={`${style.bold}`}>Vinod Abrol</p>
+                        <p>Head of Technolgy, Jabong</p>
+                      </div>
+                      <img src="assets/client1.jpg" alt="client-img"/>
+                    </div>
+                  </div>
+                </div>
+                <div className={`col-xs-12 col-md-4`}>
+                  <div className={`${style.testimonialBox}`}>
+                    <h6 className={`${style.testHeading}`}>Fast &#38; reliable support</h6>
+                    <p>It was the easiest to integrate in-product payment widget that got us started with Paytm and it was the fast and reliable support.</p>
+                    <div className={`${style.testImgBox} grid justify-between`}>
+                      <div>
+                        <p className={`${style.bold}`}>Chandan Mathew</p>
+                        <p>Head of Technology, Book My Show</p>
+                      </div>
+                      <img src="assets/client1.jpg" alt="client-img"/>
                     </div>
                   </div>
                 </div>

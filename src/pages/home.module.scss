@@ -2,7 +2,6 @@
 /* globally used */
 .global-heading{
 	text-align:center;
-	padding-bottom:36px;
 	background:url('/assets/dots.svg') no-repeat center bottom;
 	margin:40px 0 15px 0;
 	padding:0  40px 36px 40px;
@@ -12,6 +11,14 @@
 	 line-height: 2.8rem;
 	 
  }
+}
+.bold{
+	font-weight:800;
+}
+.globalshadow{
+	text-align:center;
+	background:url('/assets/dots.svg') no-repeat center center;
+	padding:12px 0px;
 }
 /* banner section styling */
 .banner-wrapper{
@@ -72,6 +79,15 @@ margin-top:-185px;
 	p{
 		color:$dark4;
 	}
+	svg{
+		width:72px;
+		height:72px;
+	}
+	&.cSolution{
+		margin-bottom:0;
+		box-shadow: none;
+		border-bottom:none;
+	}
 }
 .payment-heading{
 	margin-top:12px;
@@ -113,9 +129,71 @@ padding:24px 0 0 0;
 		margin:8px 0 12px 0;
 	}
 }
+.btn-strip{
+ border:1px solid $line;
+ height:52px;
+ line-height: 52px;
+ padding:0 20px;
+ margin-bottom:16px;
+ a{
+	 font-size:1.6rem;
+	 line-height: 2.0rem;
+	 cursor: pointer;
+ }
+}
+/* client slider section */
+.client-wrap{
+	margin:30px 0 0 0;
+}
+.client-box{
+	width:33.33%;
+	display: inline-block;
+	text-align: center;
+	margin:0px 0px 42px 0;;
+}
+.client-img-wrap{
+	width:62px;
+	height:62px;
+	border:1px solid $line;
+	margin:0 auto 12px auto;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+.client-heading{
+	font-size:1.8rem;
+	line-height:2.4rem;
+	font-weight: normal;
+	padding:0 48px;
+	text-align: center;
+	margin-top:24px;
+	margin-bottom:32px;
+}
 
-
-
+/* testimonial */
+.testimonial-box{
+	padding:16px;
+	border:1px solid $line;
+}
+.test-heading{
+	font-size:1.4rem;
+	line-height: 2.0rem;
+	font-weight: 800;
+	margin-bottom: 12px;
+}
+.test-img-box{
+	margin-top:35px;
+	div{
+		max-width:230px;
+	}
+	img{
+		width:41px;
+		height:41px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
+}
 
 @media (min-width:768px){
 	.section-wrap{
@@ -149,6 +227,20 @@ padding:24px 0 0 0;
 		
 		background: $white;
 		padding:40px;
+		svg{
+			width:110px;
+			height:83px;
+		}
+		&.cSolution{
+			min-height:301px;
+			p{
+			font-size:1.6rem;
+			line-height: 2.0rem;
+		}
+		}
+	}
+	.payment-heading{
+		margin-bottom:16px;
 	}
 	.business-steps{
 		.row{
@@ -231,4 +323,16 @@ padding:24px 0 0 0;
 		 
 	 }
 	}
+	.btn-strip{
+		padding:0 40px;
+	}
+	.client-box{
+		width:16.666%;
+	}
+	.client-heading{
+		font-size:2.4rem;
+		line-height:3.2rem;
+		margin:80px 0;
+	}
+	
 }

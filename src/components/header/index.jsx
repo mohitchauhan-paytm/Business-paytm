@@ -11,7 +11,7 @@ class Header extends Component {
       <header className={`${style.header}`}>
         <div className={` container grid justify-between align-center h100`}>
           <div className={`grid justify-between`}>
-            <a className={`${style.logoDesk} grid justify-center align-center`} href='/docs'>
+            <a className={`${style.logoDesk} grid justify-center align-center`}>
               <Logobusiness />
             </a>
           </div>
