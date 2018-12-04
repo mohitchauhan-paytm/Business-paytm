@@ -1,6 +1,7 @@
 import React from 'react';
 import androidIcon from './../../static/assets/ic-business-web-android.svg';
 import iosIcon from './../../static/assets/ic-business-web-ios.svg';
+import paytmLink from './../../static/assets/payment-links-icon.svg';
 
 
 export const  AndroidIcon = (props) => (
@@ -133,41 +134,11 @@ export const Qrcode = (props) => {
 );
 };
 
-export const Paymentlink = (props) => {
-    return (
-<svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 72 72">
-    <defs>
-        <rect id="aplink" width="72" height="72" rx="2"/>
-        <path id="bplink" d="M2 0h68a2 2 0 0 1 2 2v68a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm1 1a2 2 0 0 0-2 2v66a2 2 0 0 0 2 2h66a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3z"/>
-        <path id="dplink" d="M0 .054H21.54v18H0z"/>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <mask id="cplink" fill="#fff">
-            <use href="#bplink"/>
-        </mask>
-        <g fill="#D8D8D8" mask="url(#cplink)">
-            <path fill="none" d="M0 0h72v72H0z"/>
-        </g>
-        <g>
-            <path fill="#FFF" d="M44.329 61.071h-19.26a3.87 3.87 0 0 1-3.87-3.869V16.084a3.87 3.87 0 0 1 3.87-3.87h19.26a3.87 3.87 0 0 1 3.87 3.87v41.118a3.87 3.87 0 0 1-3.87 3.87"/>
-            <path stroke="#012B72" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M44.329 61.071h-19.26a3.87 3.87 0 0 1-3.87-3.869V16.084a3.87 3.87 0 0 1 3.87-3.87h19.26a3.87 3.87 0 0 1 3.87 3.87v41.118a3.87 3.87 0 0 1-3.87 3.87z"/>
-            <path fill="#012B72" d="M36.583 56.322c0 1.066-.844 1.929-1.885 1.929-1.04 0-1.883-.863-1.883-1.929 0-1.065.843-1.928 1.883-1.928 1.041 0 1.885.863 1.885 1.928"/>
-            <path stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M14.786 61.071h39.857"/>
-            <path fill="#FFF" d="M37.543 16.714h-5.279"/>
-            <path stroke="#012B72" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M37.543 16.714h-5.279"/>
-            <g transform="translate(37.286 25.714)">
-                <mask id="eplink" fill="#fff">
-                    <use href="#dplink"/>
-                </mask>
-                <path fill="#FFF" d="M19.693 18.054H1.849A1.85 1.85 0 0 1 0 16.204v-14.3A1.85 1.85 0 0 1 1.85.053h17.844a1.85 1.85 0 0 1 1.849 1.85v14.3a1.85 1.85 0 0 1-1.85 1.85" mask="url(#eplink)"/>
-            </g>
-            <path stroke="#00BDF2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M55.207 41.86h-14.3a1.85 1.85 0 0 1-1.85-1.85V29.566a1.85 1.85 0 0 1 1.85-1.85h14.3a1.85 1.85 0 0 1 1.85 1.85V40.01a1.85 1.85 0 0 1-1.85 1.85z"/>
-            <path stroke="#00BDF2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M56.872 29.625l-7.574 4.353a2.138 2.138 0 0 1-2.094.02l-7.962-4.373"/>
-        </g>
-    </g>
-</svg>
+export const Paymentlink = (props) => (
+    <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
+        <use xlinkHref={`#${paytmLink.id}`} />
+    </svg>
 );
-};
 
 export const Foodwallet = (props) => {
     return (

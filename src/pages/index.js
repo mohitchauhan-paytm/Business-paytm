@@ -62,7 +62,7 @@ class IndexPage extends Component {
                   </div>
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
-                  <div className={`${style.paymentBox}`}>
+                  <div className={`${style.paymentBox} ${style.bottom0}`}>
                     <Paymentlink/>
                     <h3 className={`${style.paymentHeading}`}>Payment Links</h3>
                     <p>Request payments from your customers over SMS, Chat or Email</p>
@@ -77,13 +77,13 @@ class IndexPage extends Component {
           </div>
           {/* ----------- Choose Paytm for your Business ----------- */}
           <div className={`${style.businessSteps}`}>
-            <div className={`${style.globalHeading}`}>
+            <div className={`${style.globalHeading} ${style.bgBottom}`}>
               <h2>Choose Paytm for your Business</h2>
             </div>
             <div className={`container`}>
               <div className={`${style.businessRow} row`}>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox}`}>
+                  <div className={`${style.businessStepBox} ${style.dsktpPadTop0}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -95,7 +95,7 @@ class IndexPage extends Component {
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox}`}>
+                  <div className={`${style.businessStepBox} ${style.dsktpPadTop0}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -107,7 +107,7 @@ class IndexPage extends Component {
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox}`}>
+                  <div className={`${style.businessStepBox} ${style.dsktpPadTop0}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -120,7 +120,7 @@ payments received, bank settlements and more</p>
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox}`}>
+                  <div className={`${style.businessStepBox} ${style.dsktpPadBottom0}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -131,7 +131,7 @@ payments received, bank settlements and more</p>
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox}`}>
+                  <div className={`${style.businessStepBox} ${style.dsktpPadBottom0}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -142,7 +142,7 @@ payments received, bank settlements and more</p>
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox}`}>
+                  <div className={`${style.businessStepBox} ${style.dsktpPadBottom0}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -189,12 +189,11 @@ payments received, bank settlements and more</p>
                 </div>
               </div>
             </div>
-            <div className={`${style.globalshadow}`}></div>
           </div>
 
           {/* ----------- Corporate Solutions for Your Business ----------- */}
-          <div className="C-solutionWrap">
-            <div className={`${style.globalHeading}`}>
+          <div className={`${style.corpSolutionWrap}`}>
+            <div className={`${style.globalHeading} ${style.bgTop}`}>
               <h2>Corporate Solutions for Your Business</h2>
             </div>
             <div className={`container`}>
@@ -234,8 +233,8 @@ payments received, bank settlements and more</p>
           </div>
           {/* ----------- See what our partners have to say ----------- */}
           <div className="testimonialWrap">
-            <div className={`${style.globalHeading}`}>
-              
+            <div className={`${style.testimonialMainHeading}`}>
+              <h3>See what our partners have to say</h3>
             </div>
             <div className={`container`}>
               <div className={`row`}>
@@ -250,6 +249,7 @@ payments received, bank settlements and more</p>
                       </div>
                       <img src="assets/client1.jpg" alt="client-img"/>
                     </div>
+                    <div className={`${style.arrowDown}`}></div>
                   </div>
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
@@ -263,6 +263,7 @@ payments received, bank settlements and more</p>
                       </div>
                       <img src="assets/client1.jpg" alt="client-img"/>
                     </div>
+                    <div className={`${style.arrowDown}`}></div>
                   </div>
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
@@ -276,6 +277,7 @@ payments received, bank settlements and more</p>
                       </div>
                       <img src="assets/client1.jpg" alt="client-img"/>
                     </div>
+                    <div className={`${style.arrowDown}`}></div>
                   </div>
                 </div>
               </div>
