@@ -56,5 +56,19 @@ a:focus {
     color: rgba($dark3, .5);
     border: 1px solid $sectionBG;
 }
-
+.btn{
+&.btn-small{
+    padding:0px 15px;
+    line-height: 32px;
+    min-height: 32px;
+    min-width:84px;
+    text-align: center;
+    font-size:1.4rem;
+    font-weight: 600;
+}
+&.btn-blue{
+    border:1px solid $line;
+    color:$primary;
+}
+}
 
