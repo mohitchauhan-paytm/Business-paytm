@@ -4,7 +4,17 @@ import { Menumobile } from "../svg-sprite";
 import * as style from './style.module.scss';
 
 class Header extends Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      showHumburger: false,
+    }
+  }
+  showHamburger = ()=> {
+    this.setState({
+      showHumburger: !this.state.showHumburger,
+    })
+  }
   render() {
 
     return (
@@ -16,11 +26,11 @@ class Header extends Component {
             </a>
           </div>
           <div className={`${style.mobMenuWrap} grid align-center d-visible`}>
-            <a href="/">
-              <Menumobile/>
+            <a href="#" onClick={this.showHamburger}>
+              <Menumobile />
             </a>
           </div>
-          <div className={`${style.topMenu} grid justify-between align-center h-xs`}>
+          <div className={`${style.topMenu} grid justify-between align-center h-xs ${this.state.showHumburger ? style.showMenu : ""}`}>
             <ul className={`${style.menuList} grid-inline justify-between`}>
               <li className={`${style.topMenuLink}`}><a href="/">PRODUCTS</a></li>
               <li className={`${style.topMenuLink}`}><a href="/">PRICING</a></li>
@@ -31,7 +41,7 @@ class Header extends Component {
           </div>
 
         </div>
-        
+
         {/* {
           this.props.state.showMainLogIn ?
             <div className={`popupWrapper  ${(this.props.state.showLogin && !this.props.state.loggedIn  ? ' fadeIn' : '')}`}>
