@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
 import Header from './header/index'
 import Footer from './footer/index'
-import './../style/preload.scss';
+import './../style/preload.scss'
 import './layout.css'
-
+import './../style/slick-slider/slick.scss'
+import './../style/slick-slider/slick-theme.scss'
 
 
 class Layout extends Component {

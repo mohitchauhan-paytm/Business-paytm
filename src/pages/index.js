@@ -7,12 +7,49 @@ import {Foodwallet} from './../components/svg-sprite';
 import {Paytmcash} from './../components/svg-sprite';
 import {Paytmgold} from './../components/svg-sprite';
 import * as style from './home.module.scss';
+import Slider from "react-slick";
 
 class IndexPage extends Component { 
 
   
   
   render()  {
+
+    var settings = {
+      arrows: true,
+      infinite: true,
+      dots: true,
+      speed: 500,
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      autoplay:true,
+      autoplaySpeed: 1500,
+        // the magic
+      responsive: [{
+
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          infinite: true,
+          slidesToScroll: 2
+        }
+
+      }, {
+
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          slidesToScroll: 2
+        }
+
+      }, {
+
+        breakpoint: 300,
+        settings: "unslick" // destroys slick
+
+      }]
+    };
 
       return (
     
@@ -162,6 +199,7 @@ payments received, bank settlements and more</p>
             <div className={`container`}>
               <div className={`row`}>
                 <div className={`col-xs-12 col-md-12`}>
+                <Slider  {...settings}>
                   <div className={`${style.clientBox}`}>
                     <div className={`${style.clientImgWrap}`}><img src="/assets/myntra.png" alt="myntra-logo"/></div>
                     <p>Myntra</p>
@@ -186,6 +224,55 @@ payments received, bank settlements and more</p>
                     <div className={`${style.clientImgWrap}`}><img src="/assets/foodpanda.png" alt="foodpanda-logo"/></div>
                     <p>Foodpanda</p>
                   </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/myntra.png" alt="myntra-logo"/></div>
+                    <p>Myntra</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/swiggy.png" alt="swiggy-logo"/></div>
+                    <p>Swiggy</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/oyo.png" alt="Oyo Rooms"/></div>
+                    <p>Oyo Rooms</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/uber.png" alt="uber-logo"/></div>
+                    <p>Uber</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/dominos.png" alt="dominos-logo"/></div>
+                    <p>Dominos</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/foodpanda.png" alt="foodpanda-logo"/></div>
+                    <p>Foodpanda</p>
+                  </div>
+<div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/myntra.png" alt="myntra-logo"/></div>
+                    <p>Myntra</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/swiggy.png" alt="swiggy-logo"/></div>
+                    <p>Swiggy</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/oyo.png" alt="Oyo Rooms"/></div>
+                    <p>Oyo Rooms</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/uber.png" alt="uber-logo"/></div>
+                    <p>Uber</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/dominos.png" alt="dominos-logo"/></div>
+                    <p>Dominos</p>
+                  </div>
+                  <div className={`${style.clientBox}`}>
+                    <div className={`${style.clientImgWrap}`}><img src="/assets/foodpanda.png" alt="foodpanda-logo"/></div>
+                    <p>Foodpanda</p>
+                  </div>
+                  </Slider>
                 </div>
               </div>
             </div>
