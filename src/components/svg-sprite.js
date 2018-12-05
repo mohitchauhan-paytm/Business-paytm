@@ -2,7 +2,9 @@ import React from 'react';
 import androidIcon from './../../static/assets/ic-business-web-android.svg';
 import iosIcon from './../../static/assets/ic-business-web-ios.svg';
 import paytmLink from './../../static/assets/payment-links-icon.svg';
-
+import webicon from './../../static/assets/payment-gateway-icon.svg';
+import quoteup from './../../static/assets/quote-up.svg';
+import quotedown from './../../static/assets/quote-down.svg';
 
 export const  AndroidIcon = (props) => (
     <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
@@ -68,38 +70,9 @@ export const Logodeveloper = (props) => {
 
 export const Webicon = (props) => {
     return (
-<svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 72 72">
-    <defs>
-        <rect id="awebicon" width="71.813" height="71.813" rx="2.286"/>
-        <path id="bwebicon" d="M2.286 0h67.241a2.286 2.286 0 0 1 2.286 2.286v67.241a2.286 2.286 0 0 1-2.286 2.286H2.286A2.286 2.286 0 0 1 0 69.527V2.286A2.286 2.286 0 0 1 2.286 0zm1.143 1.143a2.286 2.286 0 0 0-2.286 2.286v64.955a2.286 2.286 0 0 0 2.286 2.286h64.955a2.286 2.286 0 0 0 2.286-2.286V3.43a2.286 2.286 0 0 0-2.286-2.286H3.43z"/>
-        <path id="dwebicon" d="M.336 0h16.945v10.905H.336z"/>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <mask id="cwebicon" fill="#fff">
-            <use href="#bwebicon"/>
-        </mask>
-        <g fill="#D8D8D8" mask="url(#cwebicon)">
-            <path fill="none" d="M0 0h72.286v72.286H0z"/>
-        </g>
-        <g>
-            <path fill="#00BDF2" d="M37.785 28.284v-.012l-5.6.043c-.012 0-.195.266-.547.798v.029l1.479-.012c.248-.001.528.047.839.145.436.166.731.402.885.706v.011l-2.643.02c-.008 0-.194.268-.559.804 0 .016.008.024.024.024l3.33-.026a.958.958 0 0 1-.067.36c-.293.794-1.053 1.196-2.28 1.205-.26.002-.486-.01-.68-.035l-.012.029.006.77c0 .012 1.104 1.278 3.313 3.8l1.217-.01c.02 0 .03-.008.029-.024l-.001-.156-2.792-3.299c-.246-.28-.37-.44-.37-.478v-.011c.497-.004 1.016-.138 1.557-.4.29-.119.593-.374.909-.767.237-.387.367-.719.387-.994l1.037-.007c.008 0 .188-.268.54-.804 0-.011-.01-.02-.029-.023l-1.594.012a1.942 1.942 0 0 0-.426-.871l1.496-.012c.042-.035.227-.307.552-.815"/>
-            <path stroke="#012B72" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.486" d="M53.026 47.153H15.74a1.798 1.798 0 0 1-1.803-1.792V18.212c0-.99.807-1.792 1.803-1.792h37.287c.996 0 1.803.802 1.803 1.792v27.149c0 .99-.807 1.792-1.803 1.792z"/>
-            <path stroke="#012B72" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.486" d="M28.56 54.631l.853-7.478h10.262l.853 7.436M44.357 55.013l-9.921.036-9.529.036"/>
-            <path fill="#FFF" d="M20.251 56.571h-9.168a1.71 1.71 0 0 1-1.715-1.704V36.536a1.71 1.71 0 0 1 1.715-1.705h9.168a1.71 1.71 0 0 1 1.715 1.705v18.33a1.71 1.71 0 0 1-1.715 1.705"/>
-            <path fill="#FFF" d="M18.755 55.084h-7.542a1.71 1.71 0 0 1-1.715-1.704V37.953a1.71 1.71 0 0 1 1.715-1.705h7.542a1.71 1.71 0 0 1 1.715 1.705V53.38a1.71 1.71 0 0 1-1.715 1.704"/>
-            <path stroke="#012B72" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.486" d="M18.755 55.084h-7.542a1.71 1.71 0 0 1-1.715-1.704V37.953a1.71 1.71 0 0 1 1.715-1.705h7.542a1.71 1.71 0 0 1 1.715 1.705V53.38a1.71 1.71 0 0 1-1.715 1.704z"/>
-            <path fill="#012B72" d="M16.426 51.281a1.14 1.14 0 0 1-1.142 1.139 1.14 1.14 0 1 1 0-2.277c.632 0 1.142.51 1.142 1.138"/>
-            <g transform="translate(46.403 31.787)">
-                <mask id="ewebicon" fill="#fff">
-                    <use href="#dwebicon"/>
-                </mask>
-                <path fill="#FFF" d="M16.285 10.905H1.333a.994.994 0 0 1-.997-.99V.99C.336.444.783 0 1.333 0h14.952c.55 0 .997.444.997.99v8.924c0 .548-.446.991-.997.991" mask="url(#ewebicon)"/>
-            </g>
-            <path stroke="#00BDF2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.486" d="M60.367 41.205H49.394a.994.994 0 0 1-.997-.991v-5.95c0-.547.447-.99.997-.99h10.973c.55 0 .997.443.997.99v5.95c0 .547-.447.99-.997.99z"/>
-            <path fill="#00BDF2" d="M48.347 36.985h13.355v-1.77H48.347z"/>
-        </g>
-    </g>
-</svg>
+<svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
+        <use xlinkHref={`#${webicon.id}`} />
+    </svg>
 
 );
 };
@@ -137,6 +110,16 @@ export const Qrcode = (props) => {
 export const Paymentlink = (props) => (
     <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
         <use xlinkHref={`#${paytmLink.id}`} />
+    </svg>
+);
+export const Quoteup = (props) => (
+    <svg viewBox={props.viewBox ? props.viewBox : '0 0 21 18'} width={props.width ? props.width : '21px'} height={props.height ? props.height : '18px'}   >
+        <use xlinkHref={`#${quoteup.id}`} />
+    </svg>
+);
+export const Quotedown = (props) => (
+    <svg viewBox={props.viewBox ? props.viewBox : '0 0 21 18'} width={props.width ? props.width : '21px'} height={props.height ? props.height : '18px'}   >
+        <use xlinkHref={`#${quotedown.id}`} />
     </svg>
 );
 

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-import {Webicon} from './../components/svg-sprite';
-import {Qrcode} from './../components/svg-sprite';
-import {Paymentlink} from './../components/svg-sprite';
-import {Foodwallet} from './../components/svg-sprite';
-import {Paytmcash} from './../components/svg-sprite';
-import {Paytmgold} from './../components/svg-sprite';
+import {Webicon,Qrcode,Paymentlink} from './../components/svg-sprite';
+
+import {Foodwallet,Paytmcash,Paytmgold} from './../components/svg-sprite';
+
+
+import {Quoteup,Quotedown} from './../components/svg-sprite';
 import * as style from './home.module.scss';
 
 class IndexPage extends Component { 
@@ -19,18 +19,25 @@ class IndexPage extends Component {
         <Layout>
           {/* ----------- Banner area ----------- */}
           <div className={`${style.bannerWrapper} ${style.extraPadding}`}>
+          <p className={`${style.dotBox}`}></p>
               <div className={`container`}>
                 <div className={`${style.bannerInner} grid justify-center`}>
-                  <div className={`${style.bannerTxt}`}>
-                    <h2 className={`${style.bannerHeading1}`}>The easiest way to accept payments everywhere</h2>
-                    <h3 className={`${style.bannerHeading2}`}>More than 350 million customers and merchants use Paytm- India's most trusted payments platform</h3>
-                    <div className={`${style.bannerBtn}`}>
-                      <button className={`btn btn-primary`}>Sign up for free</button>
-                      <img src="/assets/dots.svg" className={`${style.dots} d-visible`} alt="dots"/>
+                  <div className={` ${style.btnAlignRow} row`}>
+                    <div className={`${style.positionDefault} col-xs-12 col-md-6`}>
+                      <div className={`${style.bannerTxt}`}>
+                        <h2 className={`${style.bannerHeading1}`}>The easiest way to <br/>accept payments everywhere</h2>
+                        <h3 className={`${style.bannerHeading2}`}>More than 350 million customers and merchants use Paytm- India's most trusted payments platform</h3>
+                        <div className={`${style.bannerBtnBox}`}>
+                          <button className={` ${style.bannerBlueBtn} btn btn-primary`}>Sign up for free</button>
+                          <img src="/assets/dots.svg" className={`${style.dots} d-md-none`} alt="dots"/>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className={`${style.bannerPic}`}>
-                    <img src="/assets/banner-home.png"  className={`${style.bannerImg1}`} alt="img"/>  
+                    <div className={`col-xs-12 col-md-6`}>
+                      <div className={`${style.bannerPic}`}>
+                        <img src="/assets/banner-home.png"  className={`${style.bannerImg1}`} alt="img"/>  
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -83,7 +90,7 @@ class IndexPage extends Component {
             <div className={`container`}>
               <div className={`${style.businessRow} row`}>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox} ${style.dsktpPadTop0}`}>
+                  <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -95,19 +102,19 @@ class IndexPage extends Component {
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox} ${style.dsktpPadTop0}`}>
+                  <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Fast Settlements</h4>
                       <p>Get your money in your bank account when you want- instantly* or next business day.</p>
-                      <p>*TandC apply</p>
+                      <p className={`${style.termsPara}`}>*TandC apply</p>
                     </div>
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox} ${style.dsktpPadTop0}`}>
+                  <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -120,7 +127,7 @@ payments received, bank settlements and more</p>
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox} ${style.dsktpPadBottom0}`}>
+                  <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -131,7 +138,7 @@ payments received, bank settlements and more</p>
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox} ${style.dsktpPadBottom0}`}>
+                  <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -142,7 +149,7 @@ payments received, bank settlements and more</p>
                   </div>
                 </div>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
-                  <div className={`${style.businessStepBox} ${style.dsktpPadBottom0}`}>
+                  <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
                       <img src="/assets/default.svg" alt=""/>
                     </div>
@@ -193,6 +200,9 @@ payments received, bank settlements and more</p>
 
           {/* ----------- Corporate Solutions for Your Business ----------- */}
           <div className={`${style.corpSolutionWrap}`}>
+            <div className={`container`}>
+              <div className={`${style.corpLine}`}></div>
+            </div>
             <div className={`${style.globalHeading} ${style.bgTop}`}>
               <h2>Corporate Solutions for Your Business</h2>
             </div>
@@ -234,7 +244,7 @@ payments received, bank settlements and more</p>
           {/* ----------- See what our partners have to say ----------- */}
           <div className="testimonialWrap">
             <div className={`${style.testimonialMainHeading}`}>
-              <h3>See what our partners have to say</h3>
+              <h3><span><Quoteup/></span>See what our partners have to say<span><Quotedown/></span></h3>
             </div>
             <div className={`container`}>
               <div className={`row`}>

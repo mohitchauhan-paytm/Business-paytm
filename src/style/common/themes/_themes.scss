@@ -1,4 +1,4 @@
-@import 'variables';
+@import '../variables';
 body {
     color: $textColor2;
     background: $white;
@@ -56,5 +56,6 @@ a:focus {
     color: rgba($dark3, .5);
     border: 1px solid $sectionBG;
 }
+
 
 
