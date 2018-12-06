@@ -9,7 +9,7 @@ class Footer extends Component {
 		return (
 	<footer className={`${style.footer}`}>
 		<div className={`${style.signupOuterWrap} container`}>
-			<div className={`${style.signupBox} grid justify-center align-center`}>
+			<div className={`${style.signupBox} grid justify-between align-center`}>
 				<p>Start accepting Payments today</p>
 				<button className={`btn btn-primary`}>Sign up for free</button>
 			</div>

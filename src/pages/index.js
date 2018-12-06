@@ -48,7 +48,7 @@ class IndexPage extends Component {
               <div className={`row`}>
                 <div className={`col-xs-12 col-md-4`}>
                   <div className={`${style.paymentBox}`}>
-                    <Webicon/>
+                    <div className={`${style.iconWrap}`}><Webicon viewBox={'0 0 110 83'}/></div>
                     <h3 className={`${style.paymentHeading}`}>Payment Gateway</h3>
                     <p>Add payments to your mobile app or website with Paytm SDKs and APIs</p>
                     <div className={`${style.paymentBtnWrap}`}>
@@ -59,7 +59,7 @@ class IndexPage extends Component {
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
                   <div className={`${style.paymentBox}`}>
-                    <Qrcode/>
+                  <div className={`${style.iconWrap}`}><Qrcode viewBox={'0 0 110 83'}/></div>
                     <h3 className={`${style.paymentHeading}`}>QR Code</h3>
                     <p>Accept mobile payments via UPI, Cards and Wallet from customers in your store</p>
                     <div className={`${style.paymentBtnWrap}`}>
@@ -70,7 +70,7 @@ class IndexPage extends Component {
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
                   <div className={`${style.paymentBox} ${style.bottom0}`}>
-                    <Paymentlink/>
+                    <div className={`${style.iconWrap}`}><Paymentlink viewBox={'0 0 110 83'}/></div>
                     <h3 className={`${style.paymentHeading}`}>Payment Links</h3>
                     <p>Request payments from your customers over SMS, Chat or Email</p>
                     <div className={`${style.paymentBtnWrap}`}>
@@ -104,7 +104,7 @@ class IndexPage extends Component {
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
                   <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
-                      <img src="/assets/default.svg" alt=""/>
+                      <img src="/assets/default-copy.svg" alt=""/>
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Fast Settlements</h4>
@@ -129,7 +129,7 @@ payments received, bank settlements and more</p>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
                   <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
-                      <img src="/assets/default.svg" alt=""/>
+                      <img src="/assets/access-time.svg" alt=""/>
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Accept every payment</h4>
@@ -140,7 +140,7 @@ payments received, bank settlements and more</p>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
                   <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
-                      <img src="/assets/default.svg" alt=""/>
+                      <img src="/assets/help.svg" alt=""/>
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Secure Payments</h4>
@@ -151,7 +151,7 @@ payments received, bank settlements and more</p>
                 <div className={`${style.businessRowBox} col-xs-12 col-sm-6 col-md-4`}>
                   <div className={`${style.businessStepBox}`}>
                     <div className={`${style.blueBox} grid align-center justify-center`}> 
-                      <img src="/assets/default.svg" alt=""/>
+                      <img src="/assets/secure.svg" alt=""/>
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Happy to help</h4>
@@ -210,7 +210,7 @@ payments received, bank settlements and more</p>
               <div className={`row`}>
                 <div className={`col-xs-12 col-md-4`}>
                   <div className={`${style.paymentBox} ${style.cSolution}`}>
-                    <Foodwallet/>
+                    <div className={`${style.iconWrap}`}><Foodwallet/></div>
                     <h3 className={`${style.paymentHeading}`}>Food Wallet</h3>
                     <p>Provide tax free meal allowance to your employees with paytm food wallet</p>
                   </div>
@@ -220,7 +220,7 @@ payments received, bank settlements and more</p>
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
                   <div className={`${style.paymentBox} ${style.cSolution}`}>
-                    <Paytmcash/>
+                    <div className={`${style.iconWrap}`}><Paytmcash/></div>
                     <h3 className={`${style.paymentHeading}`}>Paytm Cash</h3>
                     <p>Disburse cash digitally to your employees from an easy to use dashboard with Paytm Cash</p>
                   </div>
@@ -229,8 +229,8 @@ payments received, bank settlements and more</p>
                   </div>
                 </div>
                 <div className={`col-xs-12 col-md-4`}>
-                  <div className={`${style.paymentBox} ${style.cSolution}`}>
-                    <Paytmgold/>
+                  <div className={`${style.paymentBox} ${style.cSolution} ${style.rightPad24}`}>
+                    <div className={`${style.iconWrap}`}><Paytmgold/></div>
                     <h3 className={`${style.paymentHeading}`}>Paytm Gold</h3>
                     <p>Fast, convenient &#38; transparent way for you to gift 24K Gold digitally to your employees, partners or customers</p>
                   </div>
@@ -242,7 +242,7 @@ payments received, bank settlements and more</p>
             </div>
           </div>
           {/* ----------- See what our partners have to say ----------- */}
-          <div className="testimonialWrap">
+          <div className={`${style.testimonialWrap}`}>
             <div className={`${style.testimonialMainHeading}`}>
               <h3><span><Quoteup/></span>See what our partners have to say<span><Quotedown/></span></h3>
             </div>
@@ -254,7 +254,7 @@ payments received, bank settlements and more</p>
                     <p>Integrating Paytm was a breeze, we have spent about 30 mins doing it! Unquestionably the only Indian payment gateway truly built for developers.</p>
                     <div className={`${style.testImgBox} grid justify-between`}>
                       <div>
-                        <p className={`${style.bold}`}>Chandan Mathew</p>
+                        <p className={`${style.testUserName}`}>Chandan Mathew</p>
                         <p>Head of Technology, Book My Show</p>
                       </div>
                       <img src="assets/client1.jpg" alt="client-img"/>
@@ -268,7 +268,7 @@ payments received, bank settlements and more</p>
                     <p>Paytm is a promising technological innovation which solves a teething problem of processing payments. </p>
                     <div className={`${style.testImgBox} grid justify-between`}>
                       <div>
-                        <p className={`${style.bold}`}>Vinod Abrol</p>
+                        <p className={`${style.testUserName}`}>Vinod Abrol</p>
                         <p>Head of Technolgy, Jabong</p>
                       </div>
                       <img src="assets/client1.jpg" alt="client-img"/>
@@ -282,7 +282,7 @@ payments received, bank settlements and more</p>
                     <p>It was the easiest to integrate in-product payment widget that got us started with Paytm and it was the fast and reliable support.</p>
                     <div className={`${style.testImgBox} grid justify-between`}>
                       <div>
-                        <p className={`${style.bold}`}>Chandan Mathew</p>
+                        <p className={`${style.testUserName}`}>Chandan Mathew</p>
                         <p>Head of Technology, Book My Show</p>
                       </div>
                       <img src="assets/client1.jpg" alt="client-img"/>

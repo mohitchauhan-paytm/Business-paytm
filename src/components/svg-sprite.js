@@ -3,6 +3,10 @@ import androidIcon from './../../static/assets/ic-business-web-android.svg';
 import iosIcon from './../../static/assets/ic-business-web-ios.svg';
 import paytmLink from './../../static/assets/payment-links-icon.svg';
 import webicon from './../../static/assets/payment-gateway-icon.svg';
+import qrcode from './../../static/assets/qr-code-icon.svg';
+import foodwallet from './../../static/assets/food-icon.svg';
+import paytmcash from './../../static/assets/cash.svg';
+import paytmgold from './../../static/assets/gold.svg';
 import quoteup from './../../static/assets/quote-up.svg';
 import quotedown from './../../static/assets/quote-down.svg';
 
@@ -79,31 +83,9 @@ export const Webicon = (props) => {
 
 export const Qrcode = (props) => {
     return (
-<svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 72 72">
-    <defs>
-        <rect id="aQrcode" width="72" height="72" rx="2"/>
-        <path id="bQrcode" d="M2 0h68a2 2 0 0 1 2 2v68a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm1 1a2 2 0 0 0-2 2v66a2 2 0 0 0 2 2h66a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3z"/>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <mask id="cQrcode" fill="#fff">
-            <use href="#bQrcode"/>
-        </mask>
-        <g fill="#D8D8D8" mask="url(#cQrcode)">
-            <path fill="none" d="M0 0h72v72H0z"/>
-        </g>
-        <g>
-            <g stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.56">
-                <path d="M20.71 57.421h31.678V12.413H20.71zM12.18 57.42h48.737"/>
-            </g>
-            <path fill="#00BDF2" d="M41.118 42.022v-1.185h2.742V38.47h1.218v3.553zM42.628 44.385l-1.774.006h-.65v1.182h2.334l2.54.002v-1.19h-2.45zM37.717 45.575h1.269v-2.37h-1.269zM37.711 39.653h2.493v-1.18h-2.493zM30.762 33.434h1.827v-1.776h-1.827z"/>
-            <path fill="#00BDF2" d="M28.02 36.1h7.31v-7.107h-7.31v7.106zm1.218-1.185h4.874v-4.738h-4.874v4.738zM40.509 33.434h1.827v-1.776H40.51z"/>
-            <path fill="#00BDF2" d="M37.767 36.1h7.31v-7.107h-7.31v7.106zm1.219-1.185h4.874v-4.738h-4.874v4.738zM31.066 42.91h1.828v-1.777h-1.828z"/>
-            <path fill="#00BDF2" d="M28.325 45.575h7.31v-7.107h-7.31v7.107zm1.218-1.185h4.874v-4.737h-4.874v4.737zM37.767 42.021h1.219v-1.184h-1.219z"/>
-            <path fill="#00BCF1" d="M45.625 19.737a1.215 1.215 0 0 0-1.149-.792h-.01c-.346 0-.657.14-.879.364a1.23 1.23 0 0 0-.877-.364h-.011c-.304 0-.581.108-.794.287v-.09a.177.177 0 0 0-.179-.163h-.814c-.1 0-.18.079-.18.176v4.3c0 .097.08.176.18.176h.814c.091 0 .166-.067.178-.152v-3.087-.031a.293.293 0 0 1 .282-.265H42.336c.069.006.127.03.172.064.07.056.11.14.11.232l.003 3.072c0 .097.081.175.18.175h.815a.178.178 0 0 0 .18-.167l-.001-3.084c-.001-.102.047-.193.132-.247a.328.328 0 0 1 .15-.049H44.227a.292.292 0 0 1 .282.296l.004 3.068c0 .096.08.175.18.175h.814c.1 0 .18-.079.18-.175v-3.3c0-.224-.026-.32-.062-.419M40.111 18.99h-.466v-.734a.163.163 0 0 0-.164-.162c-.011 0-.02.002-.031.004-.517.138-.413.833-1.356.892h-.092a.167.167 0 0 0-.039.005.176.176 0 0 0-.14.17v.793c0 .096.08.175.18.175h.491v3.357c0 .096.08.174.177.174h.806a.176.176 0 0 0 .178-.174v-3.357h.456c.1 0 .18-.079.18-.175v-.792a.178.178 0 0 0-.18-.176"/>
-            <path fill="#213368" d="M37.18 18.99h-.814c-.099 0-.18.08-.18.176v1.637a.188.188 0 0 1-.19.183h-.342a.188.188 0 0 1-.19-.186l-.004-1.634a.178.178 0 0 0-.18-.176h-.814c-.1 0-.18.08-.18.176v1.794c0 .682.5 1.167 1.201 1.167 0 0 .527 0 .542.003.096.011.17.089.17.184a.187.187 0 0 1-.167.183l-.014.002-1.19.004c-.1 0-.18.079-.18.176v.79c0 .098.08.176.18.176h1.331c.702 0 1.202-.485 1.202-1.167v-3.312a.178.178 0 0 0-.18-.176M29.296 20.442v.489a.188.188 0 0 1-.19.184l-.517.002v-.98h.516c.106 0 .191.083.191.185v.12zm.071-1.451h-1.78a.174.174 0 0 0-.176.171v4.302c0 .096.073.174.165.176h.83c.099 0 .18-.078.18-.175l.003-1.204h.778c.653 0 1.108-.44 1.108-1.076v-1.117c0-.636-.455-1.077-1.108-1.077zM32.676 22.3v.124c0 .01-.002.02-.003.029a.19.19 0 0 1-.189.145h-.339c-.106 0-.192-.077-.192-.174v-.678c0-.095.086-.173.192-.173h.34c.105 0 .191.078.191.174v.553zm-.13-3.305h-1.13c-.1 0-.18.074-.18.164v.743c0 .096.085.174.191.174h1.077a.184.184 0 0 1 .161.167v.102a.177.177 0 0 1-.157.163h-.533c-.709 0-1.214.458-1.214 1.1v.921c0 .64.434 1.094 1.138 1.094h1.477c.265 0 .48-.195.48-.435v-3.004c0-.729-.386-1.189-1.31-1.189z"/>
-        </g>
-    </g>
-</svg>
+<svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
+        <use xlinkHref={`#${qrcode.id}`} />
+    </svg>
 );
 };
 
@@ -125,87 +107,24 @@ export const Quotedown = (props) => (
 
 export const Foodwallet = (props) => {
     return (
-    <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 72 72">
-    <defs>
-        <rect id="afwallet" width="72" height="72" rx="2"/>
-        <path id="bfwallet" d="M2 0h68a2 2 0 0 1 2 2v68a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm1 1a2 2 0 0 0-2 2v66a2 2 0 0 0 2 2h66a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3z"/>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <mask id="cfwallet" fill="#fff">
-            <use href="#bfwallet"/>
-        </mask>
-        <g fill="#D8D8D8" mask="url(#cfwallet)">
-            <path fill="none" d="M0 0h72v72H0z"/>
-        </g>
-        <g>
-            <path stroke="#00B9F5" stroke-linecap="round" stroke-linejoin="round" stroke-width=".972" d="M34.163 21.141l2.106-8.62"/>
-            <path stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width=".972" d="M40.867 27.606l-3.063 32.848M18.944 60.449l-3.22-32.844M37.725 60.413l-18.769.04"/>
-            <path fill="#FFF" d="M51.416 60.583H31.99c-2.888 0-5.23-2.378-5.23-5.31V40.56c0-2.933 2.342-5.31 5.23-5.31h19.427c2.889 0 5.23 2.377 5.23 5.31v14.714c0 2.932-2.341 5.31-5.23 5.31"/>
-            <path fill="#00B9F5" d="M53.197 59.95H30.21a3.107 3.107 0 0 1-2.97-2.249l-.424-1.445h29.777l-.429 1.452a3.105 3.105 0 0 1-2.968 2.242"/>
-            <path stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width=".964" d="M51.404 60.427H32c-2.865 0-5.187-2.358-5.187-5.267V40.672c0-2.909 2.322-5.267 5.187-5.267h19.403c2.865 0 5.187 2.358 5.187 5.359V55.25c0 2.818-2.322 5.176-5.187 5.176z"/>
-            <path fill="#00B9F5" d="M53.67 47.867c0 .91-.715 1.65-1.596 1.65-.882 0-1.597-.74-1.597-1.65 0-.912.715-1.651 1.597-1.651.881 0 1.596.739 1.596 1.65"/>
-            <path stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width=".972" d="M56.552 44.297H51.8c-1.933 0-3.5 1.62-3.5 3.619 0 1.998 1.567 3.619 3.5 3.619h4.753"/>
-            <path d="M11.4 61h49.558V12H11.4z"/>
-            <path fill="#FFF" stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width=".98" d="M11.918 27.554h32.857v-6.255H11.918z"/>
-            <path stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width=".972" d="M3 60.395h66"/>
-        </g>
-    </g>
-</svg>
+        <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
+        <use xlinkHref={`#${foodwallet.id}`} />
+    </svg>
         );
 };
 
 export const Paytmcash = (props) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72 72">
-    <defs>
-        <rect id="apcash" width="72" height="72" rx="2"/>
-        <path id="bpcash" d="M2 0h68a2 2 0 0 1 2 2v68a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm1 1a2 2 0 0 0-2 2v66a2 2 0 0 0 2 2h66a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3z"/>
-        <path id="dpcash" d="M46.436 23.108c0 12.763-10.388 23.109-23.203 23.109C10.419 46.217.031 35.87.031 23.108.031 10.346 10.419 0 23.233 0c12.815 0 23.203 10.346 23.203 23.108z"/>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <mask id="cpcash" fill="#fff">
-            <use href="#bpcash"/>
-        </mask>
-        <g fill="#D8D8D8" mask="url(#cpcash)">
-            <path fill="none" d="M0 0h72v72H0z"/>
-        </g>
-        <g>
-            <path fill-rule="nonzero" d="M3 12h66v49H3z"/>
-            <path stroke="#002E6E" stroke-width="1.2" d="M59.636 36.303c0 13.095-10.658 23.709-23.803 23.709-13.145 0-23.802-10.614-23.802-23.709 0-13.094 10.657-23.708 23.802-23.708s23.803 10.614 23.803 23.708z"/>
-            <path fill="#00B9F5" d="M29.579 25.537H43.49v.029c-.819 1.26-1.282 1.933-1.388 2.019h-3.717c.511.596.858 1.322 1.04 2.178h3.964c.048.01.072.028.072.058-.887 1.326-1.34 1.99-1.36 1.99H39.53c-.058.683-.386 1.505-.984 2.466-.79.971-1.548 1.6-2.27 1.89-1.35.644-2.642.966-3.877.966v.028c0 .097.305.496.912 1.198l6.87 8.264v.389c0 .038-.025.057-.073.057h-3.022c-5.438-6.316-8.158-9.489-8.158-9.518v-1.918l.029-.072c.483.066 1.047.1 1.692.1 3.047 0 4.942-.985 5.685-2.956.115-.288.173-.587.173-.895h-8.273c-.038 0-.057-.018-.057-.057.916-1.327 1.383-1.99 1.403-1.99h6.566v-.03c-.377-.758-1.105-1.35-2.185-1.774-.77-.25-1.465-.374-2.082-.374h-3.674v-.072c.888-1.318 1.345-1.976 1.375-1.976"/>
-            <path stroke="#00B9F5" stroke-dasharray="2.089799899470805,3.134999755918983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M56.393 36.303c0 11.309-9.205 20.477-20.56 20.477-11.355 0-20.56-9.168-20.56-20.477 0-11.308 9.205-20.476 20.56-20.476 11.355 0 20.56 9.168 20.56 20.476z"/>
-            <path stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M4.2 59.805h63.6"/>
-        </g>
-    </g>
-</svg>
+        <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
+        <use xlinkHref={`#${paytmcash.id}`} />
+    </svg>
         );
 };
 
 export const Paytmgold = (props) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 72 72">
-    <defs>
-        <rect id="apgold" width="72" height="72" rx="2"/>
-        <path id="bpgold" d="M2 0h68a2 2 0 0 1 2 2v68a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm1 1a2 2 0 0 0-2 2v66a2 2 0 0 0 2 2h66a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3z"/>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <mask id="cpgold" fill="#fff">
-            <use href="#bpgold"/>
-        </mask>
-        <g fill="#D8D8D8" mask="url(#cpgold)">
-            <path fill="none" d="M0 0h72v72H0z"/>
-        </g>
-        <g>
-            <path fill="#FFF" d="M30.636 60.716H8.024l3.932-15.664h14.747zM45.874 44.83H23.262l3.933-15.663h14.746zM62.096 60.716H39.484l3.933-15.664h14.747z"/>
-            <path fill="#FFF" stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.26" d="M30.636 60.716H8.024l3.932-15.664h14.747zM45.874 44.83H23.262l3.933-15.663h14.746z"/>
-            <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.26">
-                <path stroke="#002E6E" d="M62.096 60.716H39.484l3.933-15.664h14.747z"/>
-                <path stroke="#00B9F5" d="M34.896 10.577v6.025"/>
-            </g>
-            <path stroke="#00B9F5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.26" d="M22.32 24.993l-5.53-2.97M48.25 24.993l5.53-2.97"/>
-            <path stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.26" d="M2 60.774h69"/>
-        </g>
-    </g>
-</svg>
+        <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
+        <use xlinkHref={`#${paytmgold.id}`} />
+    </svg>
         );
 };
