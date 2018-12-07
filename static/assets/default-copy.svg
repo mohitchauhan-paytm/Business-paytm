@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(4.875 3)">
+            <g stroke="#FFF" stroke-linejoin="round" stroke-width="2">
+                <path stroke-linecap="round" d="M17.675 7.612H.087V4.55L8.925.788l8.75 3.762zM2.362 7.963v11.024"/>
+                <path d="M15.75 7.875V19.25"/>
+            </g>
+            <circle cx="9.012" cy="4.291" r="1.138" fill="#FFF" fill-rule="nonzero" transform="rotate(-4.591 9.012 4.291)"/>
+        </g>
+        <path fill="#FFF" fill-rule="nonzero" d="M4.612 21.813h18.463v2.625H4.613z"/>
+        <text fill="#FFF" font-family="Roboto-Medium, Roboto" font-size="10" font-weight="400" transform="translate(4 3)">
+            <tspan x="7" y="17.063">₹</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <rect id="a" width="72" height="72" rx="2"/>
+        <path id="b" d="M2 0h68a2 2 0 0 1 2 2v68a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm1 1a2 2 0 0 0-2 2v66a2 2 0 0 0 2 2h66a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#b"/>
+        </mask>
+        <g fill="#D8D8D8" mask="url(#c)">
+            <path fill="none" d="M0 0h72v72H0z"/>
+        </g>
+        <g>
+            <path fill="#FFF" d="M30.636 60.716H8.024l3.932-15.664h14.747zM45.874 44.83H23.262l3.933-15.663h14.746zM62.096 60.716H39.484l3.933-15.664h14.747z"/>
+            <path fill="#FFF" stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.26" d="M30.636 60.716H8.024l3.932-15.664h14.747zM45.874 44.83H23.262l3.933-15.663h14.746z"/>
+            <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.26">
+                <path stroke="#002E6E" d="M62.096 60.716H39.484l3.933-15.664h14.747z"/>
+                <path stroke="#00B9F5" d="M34.896 10.577v6.025"/>
+            </g>
+            <path stroke="#00B9F5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.26" d="M22.32 24.993l-5.53-2.97M48.25 24.993l5.53-2.97"/>
+            <path stroke="#002E6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.26" d="M2 60.774h69"/>
+        </g>
+    </g>
+</svg>

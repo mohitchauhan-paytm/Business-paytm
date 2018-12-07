@@ -1,4 +1,4 @@
-@import '../style/common/variables';
+@import '../../style/common/variables';
 /* globally used */
 .global-heading{
 	
@@ -96,93 +96,10 @@ padding-bottom:185px;
 .dots{
 	position: relative;
 }
-/* only for home page btn */
-.btn-align-row{
-	padding-bottom:133px;
-	.position-default{
-		position:static;
-	}
-	.banner-btn-box{
-		position: absolute;
-		bottom:42px;
-		left:50%;
-		-webkit-transform: translateX(-50%);
-		transform: translateX(-50%);
-	}
-	.banner-blue-btn{
-		min-width:184px;
-		padding:0 25px;
-	}
-	img{
-		margin-top:30px;
-	}
-}
-/* only for home page btn */
 
 
-/* ======================== payment section style ====================== */
-.payment-wrap{
-margin-top:-185px;
-}
-.payment-box{
-	padding:14px 20px 23px 20px;
-	width:100%;
-	background:$white;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	-webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.03);
-	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.03);
-	margin-bottom:16px;
-	border:1px solid $line;
-	&.bottom0{
-		margin-bottom:0;
-	}
-	p{
-		color:$dark4;
-	}
-	
-	&.cSolution{
-		margin-bottom:0;
-		box-shadow: none;
-		border-bottom:none;
-	}
-}
-.icon-wrap{
-	width:72px;
-	height:72px;
-	padding:8px 0 0 7px;
-	svg{
-		width:52px;
-		height:52px;
-	}
-}
 
-.payment-heading{
-	margin-top:12px;
-	margin-bottom:8px;
-	color:$headcolor;
-	font-weight: 800;
-}
-.payment-btn-wrap{
-	margin-top:25px;
-	button{
-		&:first-child{
-			margin-right:12px;
-		}
-	}
-}
-/* =========================corporate solution for your business ========================== */
-.corp-solution-wrap{
-	margin-bottom:32px;
-	.global-heading{
-		margin-top:5px;
-	}
-	.payment-heading{
-		margin-top:8px;
-		margin-bottom:13px;
-	}
-}
+
 /* ======================== Choose Paytm for your Business ============================ */
 .business-row-box{
 	padding-right:0;
@@ -337,6 +254,28 @@ h3{
 	right:70px;
 	
   }
+  /* ================ paytm accepted everywhere =============== */
+.promotion-box{
+    background: $backgroundColor;
+    padding:40px 0;
+}
+.promo-dscrpt{
+text-align: center;
+}
+.app-download{
+text-align: center;
+margin-top:45px;
+}
+.promo-heading{
+margin-top:24px;
+margin-bottom:20px;
+}
+.app-img{
+max-width:157px;
+}
+.promo-small-heading{
+margin-bottom:25px;
+}
   
 @media (min-width:768px){
 	.section-wrap{
@@ -383,63 +322,12 @@ h3{
 		position: relative;
 		right:-30px;
 	}
-/* only for home page btn */
-.btn-align-row{
-	padding-bottom:0px;
-	.position-default{
-		position:relative;
-	}
-	.banner-btn-box{
-		position: static;
-		bottom:0;
-		left:0;
-		-webkit-transform: none;
-		transform: none;
-	}
-	.banner-blue-btn{
-		min-width:184px;
-		padding:0 25px;
-	}
-	img{
-		margin-top:30px;
-	}
-}
-/* only for home page btn */
 
 
 
 
 
-/* ======================== payment section style ====================== */
-	.payment-box{
-		
-		background: $white;
-		padding:39px 37px 30px 37px;
-		
-		&.cSolution{
-			&.right-pad24{
-				padding-right:24px;
-			}
-			p{
-			font-size:1.6rem;
-			line-height: 2.0rem;
-		}
-		}
-	}
-	.payment-heading{
-		margin-top:22px;
-	}
-	.icon-wrap{
-		width:100%;
-		height:auto;
-		padding:0;
-		svg{
-			width:110px;
-			height:83px;
-		}
-	}
-	.payment-btn-wrap{
-		margin-top:28px;}
+
 
 	/* ======================== Choose Paytm for your Business ============================ */
 	.business-steps{
@@ -474,6 +362,7 @@ h3{
 				}
 			}
 		}
+		
 	}
 
 	.business-step-box{
@@ -513,43 +402,10 @@ h3{
     		cursor: pointer;
 		}
 	}
-	/* =========================corporate solution for your business ========================== */
-	.corp-solution-wrap{
-		.global-heading{
-			margin-bottom:80px;
-		}
-		.payment-heading{
-			margin-top:8px;
-		}
-	}
-	.corp-line{
-		border-bottom: 1px solid $line;
-		margin-bottom:151px;
-		padding-bottom:106px;
-	}
-	.btn-strip{
-		padding:0 40px;
-	}
-	/* =========================== client slider section ============================= */
-	.client-wrap{
-		margin-top:152px;
-	}
-	.client-box{
-		width:16.666%;
-	}
-
-
-	.client-heading{
-		font-size:2.4rem;
-		line-height:3.2rem;
-		margin:80px 0;
-	}
+	
 	/* ================= testimonial =========================== */
-	.test-user-name{
-		font-weight:600;
-	}
 	.testimonial-wrap{
-		margin-bottom:230px;
+        margin-bottom:230px;
 	}
 	.testimonial-box{
 		padding-bottom:32px;
@@ -558,6 +414,10 @@ h3{
 			font-size:1.4rem;
 			line-height: 2.0rem;
 			
+		}
+		
+		.test-user-name{
+			font-weight:600;
 		}
 	}
 	.testimonial-main-heading{
@@ -633,5 +493,39 @@ h3{
 	}
 	/* global end */
 	
-	
+	/* ================ paytm accepted everywhere =============== */
+.promotion-box{
+    background:none;
+    padding:0;
 }
+.promo-inner{
+    background: $backgroundColor;
+    padding:40px 59px;
+}
+.promo-logo-wrap{
+    float:left;
+    margin-right:50px;
+    svg{
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+.promo-dscrpt{
+text-align: left;
+}
+.app-download{
+text-align: center;
+margin-top:45px;
+}
+.promo-heading{
+margin-top:24px;
+margin-bottom:20px;
+}
+.app-img{
+max-width:157px;
+}
+.promo-small-heading{
+margin-bottom:25px;
+}
+}
+
+

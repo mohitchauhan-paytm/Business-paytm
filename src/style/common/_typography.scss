@@ -7,6 +7,58 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+
+@media all and (max-width: 767px){
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 400;
+    }
+    
+    h1 {
+        font-size: 2.0rem;
+        line-height: 4.0rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+        line-height: 2.0rem;
+        font-weight: 800;
+    }
+    
+    h4{
+        font-size: 1.6rem;
+        line-height: 2.0rem;
+        font-weight: 600;
+    }
+    h5{
+        font-size: 1.4rem;
+        line-height: 2.0rem;
+        font-weight: 700;
+    }
+    h6 {
+        font-size: 1.4rem;
+        line-height: 2.0rem;
+    }
+    
+    p {
+        font-size: 1.4rem;
+        line-height: 1.43;
+        color: $dark4;
+    }
+}
+
+@media(min-width:768px){
+
 h1,
 h2,
 h3,
@@ -26,17 +78,7 @@ h2 {
     line-height: 3.6rem;
 }
 
-h3 {
-    font-size: 1.6rem;
-    line-height: 2.0rem;
-    font-weight: 800;
-}
 
-h4{
-    font-size: 1.6rem;
-    line-height: 2.0rem;
-    font-weight: 600;
-}
 h5,
 h6 {
     font-size: 1.4rem;
@@ -48,16 +90,16 @@ p {
     line-height: 1.43;
     color: $dark4;
 }
+h3 {
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    font-weight: 800;
+}
+h4 {
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+}
 
-@media(min-width:768px){
-    h3 {
-        font-size: 2.0rem;
-        line-height: 2.4rem;
-        font-weight: 800;
-    }
-    h4 {
-        font-size: 2.0rem;
-        line-height: 2.4rem;
-        font-weight: 600;
-    }
+
 }
