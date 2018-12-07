@@ -9,6 +9,7 @@ import paytmcash from './../../static/assets/cash.svg';
 import paytmgold from './../../static/assets/gold.svg';
 import quoteup from './../../static/assets/quote-up.svg';
 import quotedown from './../../static/assets/quote-down.svg';
+import paytmaccepted from './../../static/assets/paytm-accepted.svg';
 
 export const  AndroidIcon = (props) => (
     <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
@@ -126,5 +127,12 @@ export const Paytmgold = (props) => {
         <svg viewBox={props.viewBox ? props.viewBox : '0 0 36 36'} width={props.width ? props.width : '36px'} height={props.height ? props.height : '36px'}   >
         <use xlinkHref={`#${paytmgold.id}`} />
     </svg>
+        );
+};
+export const Paytmaccepted= (props) => {
+    return (
+        <svg viewBox={props.viewBox ? props.viewBox : '0 0 157 157'} width={props.width ? props.width : '157px'} height={props.height ? props.height : '157px'}   >
+        <use xlinkHref={`#${paytmaccepted.id}`} />
+        </svg>
         );
 };

@@ -16,7 +16,7 @@ class Header extends Component {
             </a>
           </div>
           <div className={`${style.mobMenuWrap} grid align-center d-visible`}>
-            <a href="/">
+            <a href="/" title="Paytm Business">
               <Menumobile/>
             </a>
           </div>
