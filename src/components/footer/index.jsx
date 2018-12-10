@@ -19,7 +19,7 @@ class Footer extends Component {
 				<div className={`${style.companyInfo}`}>
 					<Logodeveloper/>
 					<h4 className={`${style.infoHeading}`}>India’s Largest & most trusted payments network.</h4>
-					<p>&copy; 2018 Paytm <a href="/">Privacy and terms</a></p>
+					{/* <p>&copy; 2018 Paytm <a href="/">Privacy and terms</a></p> */}
 				</div>
 				<div className={`${style.companySitemap} grid justify-between h-xs`}>
 					<div className={`${style.sitemapBox}`}>

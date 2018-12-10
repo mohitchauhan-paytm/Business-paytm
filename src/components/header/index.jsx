@@ -16,9 +16,9 @@ class Header extends Component {
             </a>
           </div>
           <div className={`${style.mobMenuWrap} grid align-center d-visible`}>
-            <a href="/">
+            {/* <a href="/">
               <Menumobile/>
-            </a>
+            </a> */}
           </div>
           <div className={`${style.topMenu} grid justify-between align-center h-xs`}>
             <ul className={`${style.menuList} grid-inline justify-between`}>

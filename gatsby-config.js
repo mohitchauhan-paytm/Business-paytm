@@ -10,6 +10,19 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `minimal-ui`,
+        // icon: `src/images/icon.png`
+       } // This path is relative to the root of the site.
+      },
+      `gatsby-plugin-offline`,
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
