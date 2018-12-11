@@ -56,5 +56,5 @@ imagemin(['static/assets/*.{jpg,png,jpeg}'], 'public/assets/images', {
 
 imagemin(['static/assets/*.{jpg,jpeg}'], 'public/assets/images/compressed', {
 plugins: [
-  imageminJpegRecompress({quality: 'medium'})
+  imageminJpegRecompress({quality: 'medium'}),
 ]});

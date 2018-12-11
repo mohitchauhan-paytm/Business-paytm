@@ -8,7 +8,7 @@ import {Paytmcash} from './../components/svg-sprite';
 import {Paytmgold} from './../components/svg-sprite';
 import LazyImage from '../components/lazyimage';
 import * as style from './home.module.scss';
-
+import lazySizes from 'lazysizes';
 class IndexPage extends Component { 
 
   
@@ -34,7 +34,8 @@ class IndexPage extends Component {
                       >
 
                       </LazyImage> */}
-                      <img src="/assets/dots.svg" className={`${style.dots} d-visible`} alt="dots"/>
+                      <img data-src="/assets/dots.svg" class="lazyload" />
+                      {/* <img src="/assets/dots.svg" className={`${style.dots} d-visible`} alt="dots"/> */}
                     </div>
                   </div>
                   <div className={`${style.bannerPic}`}>
@@ -45,7 +46,9 @@ class IndexPage extends Component {
                       >
 
                       </LazyImage> */}
-                    <img src="/assets/images/compressed/banner-home.png"  className={`${style.bannerImg1}`} alt="img"/>  
+                     <img data-src="/assets/images/compressed/banner-home.webp" class="lazyload" />
+
+                    {/* <img src="/assets/images/compressed/banner-home.webp"  className={`${style.bannerImg1}`} alt="img"/>   */}
                   </div>
                 </div>
               </div>
@@ -105,7 +108,9 @@ class IndexPage extends Component {
                       dataDesktopSrc = "/assets/default.svg"
                       >
                       </LazyImage> */}
-                      <img src="/assets/default.svg" alt=""/>
+                      <img data-src="/assets/default.svg" class="lazyload" />
+
+                      {/* <img src="/assets/default.svg" alt=""/> */}
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Get started in 2 minutes</h4>
@@ -122,7 +127,9 @@ class IndexPage extends Component {
                       dataDesktopSrc = "/assets/default.svg"
                       >
                       </LazyImage> */}
-                      <img src="/assets/default.svg" alt=""/>
+                                            <img data-src="/assets/default.svg" class="lazyload" />
+
+                      {/* <img src="/assets/default.svg" alt=""/> */}
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Fast Settlements</h4>
@@ -139,7 +146,9 @@ class IndexPage extends Component {
                       dataDesktopSrc = "/assets/default.svg"
                       >
                       </LazyImage>  */}
-                      <img src="/assets/default.svg" alt=""/>
+                                            <img data-src="/assets/default.svg" class="lazyload" />
+
+                      {/* <img src="/assets/default.svg" alt=""/> */}
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Watch your business grow</h4>
@@ -157,7 +166,9 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "/assets/default.svg"
                       >
                       </LazyImage> */}
-                      <img src="/assets/default.svg" alt=""/>
+                                            <img data-src="/assets/default.svg" class="lazyload" />
+
+                      {/* <img src="/assets/default.svg" alt=""/> */}
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Accept every payment</h4>
@@ -173,7 +184,9 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "/assets/default.svg"
                       >
                       </LazyImage> */}
-                      <img src="/assets/default.svg" alt=""/>
+                                            <img data-src="/assets/default.svg" class="lazyload" />
+
+                      {/* <img src="/assets/default.svg" alt=""/> */}
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Secure Payments</h4>
@@ -189,7 +202,9 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "/assets/default.svg"
                       >
                       </LazyImage> */}
-                      <img src="/assets/default.svg" alt=""/>
+                                            <img data-src="/assets/default.svg" class="lazyload" />
+
+                      {/* <img src="/assets/default.svg" alt=""/> */}
                     </div>
                     <div className={`${style.stepBoxDetail}`}>
                       <h4>Happy to help</h4>
@@ -214,7 +229,9 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "/assets/myntra.png"
                       >
                       </LazyImage> */}
-                    <img src="/assets/myntra.png" alt="myntra-logo"/>
+                      <img data-src="/assets/myntra.png" class="lazyload" />
+
+                    {/* <img src="/assets/myntra.png" alt="myntra-logo"/> */}
                     </div>
                     <p>Myntra</p>
                   </div>
@@ -225,7 +242,8 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "/assets/swiggy.png"
                       >
                       </LazyImage> */}
-                    <img src="/assets/swiggy.png" alt="swiggy-logo"/>
+                       <img data-src="/assets/swiggy.png" class="lazyload" />
+                    {/* <img src="/assets/swiggy.png" alt="swiggy-logo"/> */}
                     </div>
                     <p>Swiggy</p>
                   </div>
@@ -236,7 +254,8 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "/assets/oyo.png"
                       >
                       </LazyImage> */}
-                    <img src="/assets/oyo.png" alt="Oyo Rooms"/>
+                      <img data-src="/assets/oyo.png" class="lazyload" />
+                    {/* <img src="/assets/oyo.png" alt="Oyo Rooms"/> */}
                     </div>
                     <p>Oyo Rooms</p>
                   </div>
@@ -247,17 +266,19 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "/assets/uber.png"
                       >
                       </LazyImage> */}
-                    <img src="/assets/uber.png" alt="uber-logo"/>
+                      <img data-src="/assets/uber.png" class="lazyload" />
+                    {/* <img src="/assets/uber.png" alt="uber-logo"/> */}
                     </div>
                     <p>Uber</p>
                   </div>
                   <div className={`${style.clientBox}`}>
                     <div className={`${style.clientImgWrap}`}>
-                    <LazyImage
+                    {/* <LazyImage
                       alt = "demo image"
                       dataDesktopSrc = "/assets/dominos.png"
                       >
-                      </LazyImage>
+                      </LazyImage> */}
+                       <img data-src="/assets/dominos.png" class="lazyload" />
                     {/* <img src="/assets/dominos.png" alt="dominos-logo"/> */}
                     </div>
                     <p>Dominos</p>
@@ -269,7 +290,8 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "/assets/foodpanda.png"
                       >
                       </LazyImage> */}
-                    <img src="/assets/foodpanda.png" alt="foodpanda-logo"/>
+                         <img data-src="/assets/foodpanda.png" class="lazyload" />
+                    {/* <img src="/assets/foodpanda.png" alt="foodpanda-logo"/> */}
                     </div>
                     <p>Foodpanda</p>
                   </div>
@@ -334,11 +356,13 @@ payments received, bank settlements and more</p>
                         <p className={`${style.bold}`}>Chandan Mathew</p>
                         <p>Head of Technology, Book My Show</p>
                       </div>
-                      <LazyImage
+                      {/* <LazyImage
                       alt = "demo image"
                       dataDesktopSrc = "assets/client1.jpg"
                       >
-                      </LazyImage>
+                      </LazyImage> */}
+                      <img data-src="/assets/client1.jpg" class="lazyload" />
+
                       {/* <img src="assets/client1.jpg" alt="client-img"/> */}
                     </div>
                     <div className={`${style.arrowDown}`}></div>
@@ -358,7 +382,8 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "assets/client1.jpg"
                       >
                       </LazyImage> */}
-                      <img src="assets/client1.jpg" alt="client-img"/>
+                       <img data-src="/assets/client1.jpg" class="lazyload" />
+                      {/* <img src="assets/client1.jpg" alt="client-img"/> */}
                     </div>
                     <div className={`${style.arrowDown}`}></div>
                   </div>
@@ -377,7 +402,8 @@ payments received, bank settlements and more</p>
                       dataDesktopSrc = "assets/client1.jpg"
                       >
                       </LazyImage> */}
-                      <img src="assets/client1.jpg" alt="client-img"/>
+                       <img data-src="/assets/client1.jpg" class="lazyload" />
+                      {/* <img src="assets/client1.jpg" alt="client-img"/> */}
                     </div>
                     <div className={`${style.arrowDown}`}></div>
                   </div>
